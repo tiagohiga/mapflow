@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+
+.content {
+    padding: 24px;
+}
+
+mat-toolbar{
+    position: relative;
+    z-index: 5;
+    background-color: rgb(199, 198, 198);
+}
+
+mat-sidenav-content{
+    height: calc(100vh - 64px);
+}
+
+mat-sidenav{
+    background-color: rgb(230, 230, 233);
+    border-radius: 0%;
+    color: black;
+}
+
+body{
+    /* color: black; */
+    --primary-color: blue;
+}

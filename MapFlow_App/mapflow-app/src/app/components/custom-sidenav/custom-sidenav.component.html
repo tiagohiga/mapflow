@@ -1,0 +1,13 @@
+<div class="sidenav-header">
+    <div class="header-text">
+        MapFlow
+    </div>
+</div>
+<mat-divider></mat-divider>
+<mat-nav-list>
+    <a mat-list-item *ngFor="let item of menuItems()" [routerLink]="item.route" 
+    #rla="routerLinkActive" routerLinkActive [activated]="rla.isActive">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <span matListItemTitle>{{ item.label }}</span>
+    </a>
+</mat-nav-list>
